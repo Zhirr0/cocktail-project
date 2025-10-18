@@ -26,8 +26,8 @@ const Cocktails = () => {
   }, []);
   return (
     <section id="cocktails" className="noisy">
-      <img src={leftLeaf} alt="l-leaf" id="c-left-leaf" />
-      <img src={rightLeaf} alt="r-leaf" id="c-right-leaf" />
+      <img className="select-none" src={leftLeaf} alt="l-leaf" id="c-left-leaf" />
+      <img className="select-none" src={rightLeaf} alt="r-leaf" id="c-right-leaf" />
       <div className="list">
         <div className="popular">
           <h2>Most popular cocktails:</h2>

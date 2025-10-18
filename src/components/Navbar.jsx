@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav>
       <div>
         <a href="#home" className="flex items-center gap-2 ml-2">
-          <img src={logo} alt="logo" />
+          <img className="select-none" src={logo} alt="logo" />
           <p>Velvet Pour</p>
         </a>
         <ul className="mr-2">

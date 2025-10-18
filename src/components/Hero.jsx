@@ -71,8 +71,8 @@ const Hero = () => {
       <section className="noisy" id="hero">
         <h1 className="title">MOJITO</h1>
 
-        <img src={heroRightLeaf} alt="right leaf" className="right-leaf" />
-        <img src={heroLeftLeaf} alt="left leaf" className="left-leaf" />
+        <img src={heroRightLeaf} alt="right leaf" className="select-none right-leaf" />
+        <img src={heroLeftLeaf} alt="left leaf" className="select-none left-leaf" />
 
         <div className="body">
           <div className="content">
