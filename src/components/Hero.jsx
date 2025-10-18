@@ -1,5 +1,5 @@
 // React & Hooks
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
 // GSAP
@@ -67,7 +67,7 @@ const Hero = () => {
     };
   }, []);
   return (
-    <>
+    <React.Fragment>
       <section className="noisy" id="hero">
         <h1 className="title">MOJITO</h1>
 
@@ -102,7 +102,7 @@ const Hero = () => {
           ref={videoRef}
         />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

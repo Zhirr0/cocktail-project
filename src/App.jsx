@@ -4,6 +4,7 @@ import { ReactLenis } from "lenis/react"
 import { useEffect, useRef } from "react"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import Cocktails from "./components/Cocktails"
 
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
@@ -24,7 +25,7 @@ const App = () => {
       <main className="min-h-[100vh]">
         <Navbar />
         <Hero />
-        <div className="h-dvh bg-black"></div>
+        <Cocktails />
       </main>
     </ReactLenis>
   )
