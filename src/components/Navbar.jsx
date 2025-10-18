@@ -8,7 +8,6 @@ const Navbar = () => {
       scrollTrigger: {
         trigger: "nav",
         start: "bottom top",
-        end: "",
       },
     });
 
@@ -28,11 +27,11 @@ const Navbar = () => {
   return (
     <nav>
       <div>
-        <a href="#home" className="flex items-center gap-2">
+        <a href="#home" className="flex items-center gap-2 ml-2">
           <img src={logo} alt="logo" />
           <p>Velvet Pour</p>
         </a>
-        <ul>
+        <ul className="mr-2">
           {navLinks.map((link) => (
             <li key={link.id}>
               <a href={`#${link.id}`}>{link.title}</a>
