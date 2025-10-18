@@ -1,15 +1,33 @@
-import gsap from "gsap";
-import { ScrollTrigger, SplitText } from "gsap/all";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import gsap from "gsap"
+import { ScrollTrigger, SplitText } from "gsap/all"
+import { ReactLenis } from "lenis/react"
+import { useEffect, useRef } from "react"
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
 
-gsap.registerPlugin( ScrollTrigger, SplitText)
+gsap.registerPlugin(ScrollTrigger, SplitText)
+
 const App = () => {
-  return <main className="min-h-[100vh]">
-    <Navbar />
-    <Hero />
-    <div className="h-dvh bg-black"></div>
-  </main>;
-};
+  const lenisRef = useRef()
 
-export default App;
+  useEffect(() => {
+    function update(time) {
+      lenisRef.current?.lenis?.raf(time * 1000)
+    }
+
+    gsap.ticker.add(update)
+    return () => gsap.ticker.remove(update)
+  }, [])
+
+  return (
+    <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>
+      <main className="min-h-[100vh]">
+        <Navbar />
+        <Hero />
+        <div className="h-dvh bg-black"></div>
+      </main>
+    </ReactLenis>
+  )
+}
+
+export default App
