@@ -69,7 +69,10 @@ const Hero = () => {
   return (
     <React.Fragment>
       <section className="noisy" id="hero">
+        <div className="overflow-hidden h-fit">
+
         <h1 className="title">MOJITO</h1>
+        </div>
 
         <img src={heroRightLeaf} alt="right leaf" className="select-none right-leaf" />
         <img src={heroLeftLeaf} alt="left leaf" className="select-none left-leaf" />
