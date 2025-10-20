@@ -1,144 +1,82 @@
-import drink1 from "../public/images/drink1.png";
-import drink2 from "../public/images/drink2.png";
-import drink3 from "../public/images/drink3.png";
-import drink4 from "../public/images/drink4.png";
+// Image imports
+import drink1 from "../public/images/drink1.png"
+import drink2 from "../public/images/drink2.png"
+import drink3 from "../public/images/drink3.png"
+import drink4 from "../public/images/drink4.png"
 
+import profile1 from "../public/images/profile1.png"
+import profile2 from "../public/images/profile2.png"
+import profile3 from "../public/images/profile3.png"
+import profile4 from "../public/images/profile4.png"
 
+import insta from "../public/images/insta.png"
+import x from "../public/images/x.png"
+import fb from "../public/images/fb.png"
+
+// Data
 const navLinks = [
-    {
-        id: "cocktails",
-        title: "Cocktails",
-    },
-    {
-        id: "about",
-        title: "About Us",
-    },
-    {
-        id: "work",
-        title: "The Art",
-    },
-    {
-        id: "contact",
-        title: "Contact",
-    },
-];
+  { id: "cocktails", title: "Cocktails" },
+  { id: "about", title: "About Us" },
+  { id: "work", title: "The Art" },
+  { id: "contact", title: "Contact" },
+]
 
 const cocktailLists = [
-    {
-        name: "Chapel Hill Shiraz",
-        country: "AU",
-        detail: "Battle",
-        price: "$10",
-    },
-    {
-        name: "Caten Malbee",
-        country: "AU",
-        detail: "Battle",
-        price: "$49",
-    },
-    {
-        name: "Rhino Pale Ale",
-        country: "CA",
-        detail: "750 ml",
-        price: "$20",
-    },
-    {
-        name: "Irish Guinness",
-        country: "IE",
-        detail: "600 ml",
-        price: "$29",
-    },
-];
+  { name: "Chapel Hill Shiraz", country: "AU", detail: "Battle", price: "$10" },
+  { name: "Caten Malbee", country: "AU", detail: "Battle", price: "$49" },
+  { name: "Rhino Pale Ale", country: "CA", detail: "750 ml", price: "$20" },
+  { name: "Irish Guinness", country: "IE", detail: "600 ml", price: "$29" },
+]
 
 const mockTailLists = [
-    {
-        name: "Tropical Bloom",
-        country: "US",
-        detail: "Battle",
-        price: "$10",
-    },
-    {
-        name: "Passionfruit Mint",
-        country: "US",
-        detail: "Battle",
-        price: "$49",
-    },
-    {
-        name: "Citrus Glow",
-        country: "CA",
-        detail: "750 ml",
-        price: "$20",
-    },
-    {
-        name: "Lavender Fizz",
-        country: "IE",
-        detail: "600 ml",
-        price: "$29",
-    },
-];
+  { name: "Tropical Bloom", country: "US", detail: "Battle", price: "$10" },
+  { name: "Passionfruit Mint", country: "US", detail: "Battle", price: "$49" },
+  { name: "Citrus Glow", country: "CA", detail: "750 ml", price: "$20" },
+  { name: "Lavender Fizz", country: "IE", detail: "600 ml", price: "$29" },
+]
 
 const profileLists = [
-    {
-        imgPath: "/images/profile1.png",
-    },
-    {
-        imgPath: "/images/profile2.png",
-    },
-    {
-        imgPath: "/images/profile3.png",
-    },
-    {
-        imgPath: "/images/profile4.png",
-    },
-];
+  { imgPath: profile1 },
+  { imgPath: profile2 },
+  { imgPath: profile3 },
+  { imgPath: profile4 },
+]
 
 const featureLists = [
-    "Perfectly balanced blends",
-    "Garnished to perfection",
-    "Ice-cold every time",
-    "Expertly shaken & stirred",
-];
+  "Perfectly balanced blends",
+  "Garnished to perfection",
+  "Ice-cold every time",
+  "Expertly shaken & stirred",
+]
 
 const goodLists = [
-    "Handpicked ingredients",
-    "Signature techniques",
-    "Bartending artistry in action",
-    "Freshly muddled flavors",
-];
+  "Handpicked ingredients",
+  "Signature techniques",
+  "Bartending artistry in action",
+  "Freshly muddled flavors",
+]
 
 const storeInfo = {
-    heading: "Where to Find Us",
-    address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
-    contact: {
-        phone: "(555) 987-6543",
-        email: "hello@jsmcocktail.com",
-    },
-};
+  heading: "Where to Find Us",
+  address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
+  contact: {
+    phone: "(555) 987-6543",
+    email: "hello@jsmcocktail.com",
+  },
+}
 
 const openingHours = [
-    { day: "Mon-Thu", time: "11:00am - 12am" },
-    { day: "Fri", time: "11:00am - 2am" },
-    { day: "Sat", time: "9:00am - 2am" },
-    { day: "Sun", time: "9:00am - 1am" },
-];
+  { day: "Mon-Thu", time: "11:00am - 12am" },
+  { day: "Fri", time: "11:00am - 2am" },
+  { day: "Sat", time: "9:00am - 2am" },
+  { day: "Sun", time: "9:00am - 1am" },
+]
 
 const socials = [
-    {
-        name: "Instagram",
-        icon: "/images/insta.png",
-        url: "#",
-    },
-    {
-        name: "X (Twitter)",
-        icon: "/images/x.png",
-        url: "#",
-    },
-    {
-        name: "Facebook",
-        icon: "/images/fb.png",
-        url: "#",
-    },
-];
+  { name: "Instagram", icon: insta, url: "#" },
+  { name: "X (Twitter)", icon: x, url: "#" },
+  { name: "Facebook", icon: fb, url: "#" },
+]
 
 const allCocktails = [
   {
@@ -173,17 +111,17 @@ const allCocktails = [
     description:
       "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
   },
-];
+]
 
 export {
-    navLinks,
-    cocktailLists,
-    mockTailLists,
-    profileLists,
-    featureLists,
-    goodLists,
-    openingHours,
-    storeInfo,
-    socials,
-    allCocktails,
-};
+  navLinks,
+  cocktailLists,
+  mockTailLists,
+  profileLists,
+  featureLists,
+  goodLists,
+  openingHours,
+  storeInfo,
+  socials,
+  allCocktails,
+}
